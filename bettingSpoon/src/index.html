@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Betting Spoon</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div id="root">
+      <!-- header (include) -->
+      <header>
+        <div class="inner">
+          <h1>
+            <a href="index.html">SPONNER NFT</a>
+          </h1>
+          <button type="button" class="btn-nav-toggle" onclick="mobileNavToggle();">
+            <span>메뉴</span>
+          </button>
+          <nav id="nav">
+            <div class="nav-inner">
+              <ul>
+                <li>
+                  <a href="index.html" id="index"><span>HOME</span></a>
+                </li>
+                <li>
+                  <a href="videoPoker.html" id="videoPoker"><span>VIDEO POKER</span></a>
+                </li>
+                <li>
+                  <a href="baccarat.html" id="baccarat"><span>BACCARAT</span></a>
+                </li>
+                <li>
+                  <a href="bigwheel.html" id="bigwheel"><span>BIGWHEEL</span></a>
+                </li>
+                <li>
+                  <a href="lotto.html" id="lotto"><span>LOTTO</span></a>
+                </li>
+              </ul>
+              <div class="btn-group">
+                <button type="button" onclick="window.open('https://discord.gg/spooner-nft');" class="btn-discord">
+                  discord
+                </button>
+                <button type="button" onclick="window.open('https://twitter.com/SPOONER_NFT');" class="btn-twitter">
+                  twitter
+                </button>
+                <button
+                  type="button"
+                  onclick="window.open('https://opensea.io/collection/spooner-nft');"
+                  class="btn-opensea"
+                >
+                  opensea
+                </button>
+                <button type="button" onclick="window.open('https://nft.bettingspoon.com');" class="btn-spooner">
+                  spooner NFT
+                </button>
+                <div class="gnb-login">
+                  <!-- start : 2022-04 -->
+
+                  <!-- (PPT page 4) 비 로그인 상태 GNB (LOGIN, JOIN) -->
+                  <button type="button" class="btn-login" onclick="modalPop('.modal-login', true);">LOGIN</button>
+                  <button type="button" class="btn-join" onclick="modalPop('.modal-form', true);">JOIN</button>
+                  <!-- // (PPT page 4) 비 로그인 상태 (LOGIN, JOIN) -->
+
+                  <!-- (PPT page 5, 23) 로그인 일때 GNB (ID(공통), INSTALL || CONNECT || METAMASK) -->
+                  <!-- ID(공통 )-->
+                  <a href="#" class="header-profile" style="display: none">
+                    <span style="background-image: url(images/bg_videopoker.jpg)"></span>
+                    <strong>testerId12345678901234567890</strong>
+                  </a>
+                  <ul style="display: none">
+                    <li><a href="#" onclick="guideGnb('logout');">LOGOUT</a></li>
+                  </ul>
+                  <!-- case INSTALL -->
+                  <button type="button" class="btn-metamask install" style="display: none">INSTALL</button>
+                  <!-- case CONNECT -->
+                  <button type="button" class="btn-metamask connect" style="display: none">CONNECT</button>
+                  <!-- case METAMASK LOGIN -->
+                  <button type="button" class="btn-gnb-login" id="metamaskId" style="display: none"></button>
+                  <!-- // (PPT page 5, 23) 로그인 일때 GNB (ID(공통), INSTALL || CONNECT || METAMASK) -->
+
+                  <!-- end : 2022-04 -->
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- // header (include) -->
+      <main>
+        <section class="home">
+          <div class="inner">
+            <div class="title-area">
+              <div class="desc-box">
+                <h2>BACCARAT event</h2>
+                <p class="desc">
+                  This is an event for SPOONER NFT members.<br />
+                  Punch in your luck on Discord!<br />
+                  Big prizes are waiting for you.
+                </p>
+                <a href="baccarat.html" class="btn-more-info"><span>more info</span></a>
+              </div>
+              <div class="btn-area">
+                <!-- [D] 로그인 전 -->
+                <button type="button" class="btn-play-game" onclick="modalAlert('Please log in before you play.','OK')">
+                  play game
+                </button>
+                <!-- [D] 로그인 후 -->
+                <!-- <button
+                  type="button"
+                  class="btn-play-game"
+                  onclick="location.href='/bettingSpoon/src/baccarat.html';"
+                >
+                  play game
+                </button> -->
+              </div>
+            </div>
+            <ul class="guide-form">
+              <li>
+                <p>Only the selected members of SPOONER NFT DISCORD</p>
+                <span class="hash">Join the BACCARAT event now!</span><br />
+                <!-- [D] 로그인 전 -->
+                <button type="button" class="btn-join-now" onclick="modalPop('.modal-form', true);">join now</button>
+                <!-- [D] 로그인 후 -->
+                <!-- <button type="button" class="btn-join-now" onclick="location.href='/bettingSpoon/src/baccarat.html';">
+                  more info
+                </button> -->
+              </li>
+              <li>
+                <p>
+                  For the Whitelisted and SPOONER NFT holders,<br />
+                  please connect your MetaMask wallet.<br />
+                  You will earn more benefits.
+                </p>
+                <button type="button" class="btn-metamask" onclick="window.open('https://www.metamask.io')">
+                  install metamask
+                </button>
+                <!-- [D] 지갑 연결 후 버튼 -->
+                <!-- <button type="button" class="btn-metamask connect">connect metamask</button> -->
+              </li>
+              <li>
+                <p>
+                  After the login, the &#91;PLAY&#93; button is activated. <br />
+                  By clicking the button, you may start playing the game. <br />
+                  The game money is automatically refilled once a day. <br />
+                  Good luck!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!-- footer (include) -->
+      <footer>
+        <div class="inner">
+          <a href="index.html" class="footer-logo">BettingSpoon</a>
+          <span>&copy; 2022 BETTINGSPOON. ALL RIGHTS RESERVED.</span>
+        </div>
+      </footer>
+      <aside>
+        <div class="pop-modal modal-alert">
+          <div class="modal-dimmed" onclick="modalPop('.modal-alert', false);"></div>
+          <div class="modal-content">
+            <p class="modal-alert-comment"></p>
+            <button
+              type="button"
+              class="btn-modal-base btn-alert-close"
+              onclick="modalPop('.modal-alert', false);"
+            ></button>
+          </div>
+        </div>
+        <!-- start : 2022-04 -->
+        <!-- (PPT page 6) 팝업 - 회원가입 -->
+        <div class="pop-modal modal-form modal-join">
+          <div class="modal-dimmed" onclick="modalPop('.modal-join', false);"></div>
+          <div class="modal-content">
+            <h3><strong>Create your account</strong></h3>
+            <button type="button" class="btn-modal-base btn-alert-close" onclick="modalPop('.modal-join', false);">
+              닫기
+            </button>
+            <div class="modal-contents-scroll">
+              <form name="formJoin" action="#">
+                <div class="form-box">
+                  <dl>
+                    <dt>* Username</dt>
+                    <dd>
+                      <input type="text" name="userId" maxlength="18" onkeyup="validUserId(this)" class="icon-user" />
+                      <p class="warning-text"></p>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>* Password</dt>
+                    <dd>
+                      <input
+                        type="password"
+                        name="userPassword"
+                        autocomplete="off"
+                        onkeyup="validUserPwd(this)"
+                        class="icon-lock"
+                      />
+                      <p class="warning-text"></p>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>* Confirm password</dt>
+                    <dd>
+                      <input
+                        type="password"
+                        name="matchPassword"
+                        autocomplete="off"
+                        onkeyup="validMatchPwd(this, document.getElementsByName('formJoin')[0].userPassword)"
+                        class="icon-lock"
+                      />
+                      <p class="warning-text"></p>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>* Email</dt>
+                    <dd>
+                      <input class="email" type="email" name="emailId" onkeyup="validEmail(this)" />
+                      <p class="warning-text"></p>
+                    </dd>
+                  </dl>
+                  <label for="ageAgree" class="checkbox-form">
+                    <div class="flex-box">
+                      <input type="checkbox" name="ageAgree" id="ageAgree" onclick="validAgeAgree(this)" />
+                      <span class="ico-check"></span>
+                      <p>
+                        I confirm that I am at least 18 years of age and that I have read and agreed to
+                        <a href="#" target="_blank">Terms and Conditions</a>,
+                        <a href="" target="_blank">Cookies Policy</a> and <a href="" target="_blank">Privacy Policy</a>.
+                      </p>
+                    </div>
+                    <p class="warning-text"></p>
+                  </label>
+                  <label for="notiAgree" class="checkbox-form">
+                    <div class="flex-box">
+                      <input type="checkbox" name="notiAgree" id="notiAgree" />
+                      <span class="ico-check"></span>
+                      <p>
+                        I consent to receive details of special offers, news, promotions and other marketing
+                        communications by email and mobile notification.
+                      </p>
+                    </div>
+                  </label>
+                </div>
+                <div class="btn-area">
+                  <button type="button" class="btn btn-join-now" onclick="joinSubmit('formJoin')">Join now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- // (PPT page 6) 팝업 - 회원가입 -->
+        <!-- (PPT page 8) 팝업 - 이메일 체크 -->
+        <div class="pop-modal modal-form modal-email">
+          <div class="modal-dimmed" onclick="modalPop('.modal-email', false);"></div>
+          <div class="modal-content">
+            <h3><strong>You're almost there!</strong></h3>
+            <button type="button" class="btn-modal-base btn-alert-close" onclick="modalPop('.modal-email', false);">
+              닫기
+            </button>
+            <div class="modal-contents-scroll">
+              <h4>Please check your email.</h4>
+              <p>
+                We've sent a verification email to your email address.<br />
+                Just click the link in your email to finish creating your account.
+              </p>
+              <p>You cannot start a game until you verify your account.</p>
+              <p>
+                If you have not received the email from us, please check your junk mail or
+                <a href="#" target="_blank">request another email</a>.
+              </p>
+              <div class="btn-area">
+                <button
+                  class="btn"
+                  type="button"
+                  onclick="modalPop('.modal-change-email', false); location.href='index.html';"
+                >
+                  RETURN TO HOME
+                </button>
+                <a href="#" onclick="modalPop('.modal-form modal-email', false); modalPop('.modal-change-email', true);"
+                  >Change email address</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // (PPT page 8) 팝업 - 이메일 체크 -->
+        <!-- (PPT page 8) 팝업 - 이메일 변경 -->
+        <div class="pop-modal modal-form modal-change-email">
+          <div class="modal-dimmed" onclick="modalPop('.modal-change-email', false);"></div>
+          <div class="modal-content">
+            <h3><strong>Change email address</strong></h3>
+            <button
+              type="button"
+              class="btn-modal-base btn-alert-close"
+              onclick="modalPop('.modal-change-email', false);"
+            >
+              닫기
+            </button>
+            <div class="modal-contents-scroll">
+              <h4>Enter your new email address below<span> </span>so we can send you a confirmation email.</h4>
+              <form name="formEmail" action="#">
+                <div class="form-box">
+                  <dl>
+                    <dt>* Email</dt>
+                    <dd>
+                      <input class="email" type="email" name="changeEmailId" onkeyup="validEmail(this)" />
+                      <p class="warning-text"></p>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="btn-area">
+                  <button type="button" class="btn" onclick="changeEmail('changeEmailId');">Save &amp; Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- // (PPT page 8) 팝업 - 이메일 변경 -->
+        <!-- (PPT page 18) 팝업 - 비밀번호 변경 -->
+        <div class="pop-modal modal-logo-type modal-password-reset">
+          <div class="modal-dimmed" onclick="modalPop('.modal-password-reset', false);"></div>
+          <div class="modal-content">
+            <h3><strong>Betting Spoon</strong></h3>
+            <button
+              type="button"
+              class="btn-modal-base btn-alert-close"
+              onclick="modalPop('.modal-password-reset', false);"
+            >
+              닫기
+            </button>
+            <div class="modal-contents-scroll">
+              <h4>Reset Password</h4>
+              <p>Please complete the fields below to reset your password.</p>
+              <form name="formResetPassword" action="#">
+                <div class="form-box">
+                  <dl>
+                    <dt>Reset Password</dt>
+                    <dd>
+                      <input
+                        type="password"
+                        name="resetPassword"
+                        autocomplete="off"
+                        class="icon-lock"
+                        onkeyup="validUserPwd(this)"
+                      />
+                      <p class="warning-text"></p>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Confirm password</dt>
+                    <dd>
+                      <input
+                        type="password"
+                        name="resetMatchPassword"
+                        autocomplete="off"
+                        class="icon-lock"
+                        onkeyup="validMatchPwd(this,document.getElementsByName('resetPassword')[0])"
+                      />
+                      <p class="warning-text"></p>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="btn-area">
+                  <button
+                    type="button"
+                    class="btn btn-bs-base"
+                    onclick="changePassword(document.getElementsByName('resetMatchPassword')[0],document.getElementsByName('resetPassword')[0]);"
+                  >
+                    SUBMIT
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- // (PPT page 18) 팝업 - 비밀번호 변경 -->
+        <!-- (PPT page 19) 팝업 - 비밀번호 변경 성공 -->
+        <div class="pop-modal modal-logo-type modal-thanks">
+          <div class="modal-dimmed" onclick="modalPop('.modal-thanks', false);"></div>
+          <div class="modal-content">
+            <h3><strong>Betting Spoon</strong></h3>
+            <button type="button" class="btn-modal-base btn-alert-close" onclick="modalPop('.modal-thanks', false);">
+              닫기
+            </button>
+            <div class="modal-contents-middle">
+              <strong>Thank you!</strong>
+              <p>Your password has been successfully reset and you can log in now.</p>
+              <div class="modal-bottom-box">
+                <button type="button" class="btn-bs-base">LOG IN</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // (PPT page 19) 팝업 - 비밀번호 변경 성공 -->
+        <!-- (PPT page 20) 팝업 - 토큰만료 잘못된 접근 -->
+        <div class="pop-modal modal-logo-type modal-404">
+          <div class="modal-dimmed" onclick="modalPop('.modal-404', false);"></div>
+          <div class="modal-content">
+            <h3><strong>Betting Spoon</strong></h3>
+            <button type="button" class="btn-modal-base btn-alert-close" onclick="modalPop('.modal-404', false);">
+              닫기
+            </button>
+            <div class="modal-contents-middle">
+              <strong>Please try again.</strong>
+              <p>The token previously used has expired or is invalid.</p>
+              <div class="modal-bottom-box">
+                <button type="button" class="btn-bs-base" onclick="modalPop('.modal-404', false);">CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // (PPT page 20) 팝업 - 토큰만료 잘못된 접근 -->
+        <!-- (PPT page 14) 팝업 - 이메일 인증 성공 -->
+        <div class="pop-modal modal-logo-type email-auth-success">
+          <div class="modal-dimmed" onclick="modalPop('.email-auth-success', false);"></div>
+          <div class="modal-content">
+            <h3><strong>Betting Spoon</strong></h3>
+            <button
+              type="button"
+              class="btn-modal-base btn-alert-close"
+              onclick="modalPop('.email-auth-success', false);"
+            >
+              닫기
+            </button>
+            <div class="modal-contents-middle">
+              <strong>Account activated.</strong>
+              <p>Thank you for confirming your email address.</p>
+              <div class="modal-bottom-box">
+                <button type="button" class="btn-bs-base" onclick="modalPop('.email-auth-success', false);">
+                  CLOSE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // (PPT page 14) 팝업 - 이메일 인증 성공 -->
+        <!-- (PPT page 16) 팝업 - 이메일 재입력 -->
+        <div class="pop-modal modal-logo-type modal-email-update">
+          <div class="modal-dimmed" onclick="modalPop('.modal-email-update', false);"></div>
+          <div class="modal-content">
+            <h3><strong>Betting Spoon</strong></h3>
+            <button
+              type="button"
+              class="btn-modal-base btn-alert-close"
+              onclick="modalPop('.modal-email-update', false);"
+            >
+              닫기
+            </button>
+            <div class="modal-contents-scroll">
+              <form name="formEmailUpdate" action="#">
+                <div class="form-box">
+                  <p>
+                    Forgot your login credentials?<br />
+                    Please enter your account information below.<br />
+                    If it's on our system, we'll send you an email containing <br />
+                    <em>your username</em> and instructions on how to reset <em>your password.</em>
+                  </p>
+                  <dl>
+                    <dt>Email</dt>
+                    <dd>
+                      <input class="email" type="email" name="updateEmailId" onkeyup="validEmail(this)" />
+                      <p class="warning-text"></p>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="modal-bottom-box">
+                  <button type="button" class="btn-bs-base" onclick="changeEmail('updateEmailId');">SUBMIT</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- // (PPT page 16) 팝업 - 이메일 재입력 -->
+        <!-- (PPT page 13) 팝업 - 이메일 인증 확인 -->
+        <div class="pop-modal modal-logo-type modal-email-certification">
+          <div class="modal-dimmed" onclick="modalPop('.modal-email-certification', false);"></div>
+          <div class="modal-content">
+            <h3><strong>Betting Spoon</strong></h3>
+            <button
+              type="button"
+              class="btn-modal-base btn-alert-close"
+              onclick="modalPop('.modal-email-certification', false);"
+            >
+              닫기
+            </button>
+            <div class="modal-contents-scroll">
+              <div class="form-box">
+                <h4>Activate your account</h4>
+                <p>
+                  Your email address has not been verified.<br />
+                  You cannot log in until you verify your email address<br />
+                  as <em>xxxxx@zzz.com</em>.<br />
+                  Please click ‘Resend’ and check your inbox for instructions.
+                </p>
+              </div>
+              <div class="modal-bottom-box">
+                <button type="button" class="btn-bs-base">RESEND</button>
+                <a
+                  href="#"
+                  onclick="modalPop('.modal-email-certification', false); modalPop('.modal-change-email', true);"
+                  ><span>Change email address</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // (PPT page 13) 팝업 - 이메일 인증 확인 -->
+        <!-- (PPT page 10, 11, 12) 팝업 - 로그인 -->
+        <div class="pop-modal modal-logo-type modal-login">
+          <div class="modal-dimmed" onclick="modalPop('.modal-login', false);"></div>
+          <div class="modal-content">
+            <h3><strong>Betting Spoon</strong></h3>
+            <button type="button" class="btn-modal-base btn-alert-close" onclick="modalPop('.modal-login', false);">
+              닫기
+            </button>
+            <div class="modal-contents-scroll">
+              <form name="formModalLogin" action="#">
+                <div class="form-box">
+                  <dl>
+                    <dt>UserName</dt>
+                    <dd>
+                      <input type="text" name="userId" maxlength="18" class="icon-user" placeholder="UserName" />
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>Password</dt>
+                    <dd>
+                      <input
+                        type="password"
+                        name="userPassword"
+                        autocomplete="off"
+                        placeholder="Password"
+                        class="icon-lock"
+                      />
+                    </dd>
+                  </dl>
+                </div>
+                <div class="result-box">
+                  <!-- 로그인 정보 틀림 -->
+                  <div class="result-fail" style="display: none">
+                    <p>Invalid login credentials.<br />Your account will be locked after you fail to log in 5 times.</p>
+                  </div>
+                  <!-- // 로그인 정보 틀림 -->
+                  <!-- 로그인 캡챠 -->
+                  <div class="captcha-box" style="display: none">
+                    <p>Please complete the captcha below to finish logging in.</p>
+                    <p class="text-red" style="display: none">Invalid login credentials.</p>
+                    <div class="captcha-item">
+                      <!-- captcha 자리 (호출 시 아래 태그 제거) -->
+                      <div style="width: 100%; height: 10rem; border: 0.1rem solid #999; background-color: #fff"></div>
+                      <!-- // captcha -->
+                    </div>
+                  </div>
+                  <!-- // 로그인 캡챠 -->
+                </div>
+                <div class="info-box">
+                  <label for="saveUserName" class="checkbox-form">
+                    <div class="flex-box">
+                      <input type="checkbox" name="saveUserName" id="saveUserName" />
+                      <span class="ico-check"></span>
+                      <p>Save username</p>
+                    </div>
+                  </label>
+                  <a href="#"><span>Forgot your login credentials?</span></a>
+                </div>
+                <button type="button" class="btn-bs-base btn-login">LOG IN</button>
+                <p>
+                  No account yet? <a href="#" target="_blank"><span>Join now!</span></a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- // (PPT page 10, 11, 12) 팝업 - 로그인 -->
+        <!-- end : 2022-04 -->
+      </aside>
+      <!-- // footer (include) -->
+    </div>
+    <!-- pub guide (가이드를 위한 소스입니다. 참고용으로만 봐주세요.) -->
+    <style>
+      .guide-box {
+        position: fixed;
+        top: 6em;
+        left: 6em;
+        width: 25em;
+        height: auto;
+        padding: 1em;
+        font-size: 10px;
+        background-color: #fff;
+        border: 0.2em solid #ec1616;
+        transition: 0.3s;
+        z-index: 9999;
+      }
+      .guide-box button {
+        width: 100%;
+        margin: 0.5em auto;
+        font-size: 1.3em;
+        color: #000;
+      }
+      .guide-box button span {
+        display: block;
+        margin-top: 0.2em;
+        font-size: 1.2em;
+        font-weight: lighter;
+        color: #999;
+        text-transform: uppercase;
+      }
+      .guide-box h1 {
+        width: 100%;
+        padding: 0.5em 0 1em;
+        font-weight: 700;
+        font-size: 1.4em;
+        color: #ec1616;
+        text-align: center;
+        border-bottom: 0.1em solid #ec1616;
+      }
+      .guide-box .btn-folder {
+        position: absolute;
+        top: -0.6em;
+        right: -3.3em;
+        width: 3em;
+        height: 3em;
+        font-weight: 400;
+        font-size: 1.3em;
+        color: #fff;
+        background-color: #ec1616;
+        text-align: center;
+      }
+      .guide-box .btn-folder:before {
+        content: '접기';
+      }
+      .guide-box.fold .btn-folder:before {
+        content: '펴기';
+      }
+      .guide-box.fold {
+        width: 1px;
+        height: 1px;
+        padding: 0;
+      }
+      .guide-box.fold h1,
+      .guide-box.fold .btn-list {
+        display: none;
+      }
+      @media screen and (max-width: 1024px) {
+        .guide-box {
+          font-size: 8px;
+        }
+      }
+    </style>
+    <div class="guide-box">
+      <h1>이해를 돕기위한 가이드 박스 입니다.</h1>
+      <button
+        type="button"
+        class="btn-folder"
+        onclick="document.querySelector('.guide-box').classList.toggle('fold');"
+      ></button>
+      <div class="btn-list">
+        <button type="button" onclick="guideGnb('logout');">GNB - 로그아웃 상태 <span>PPT page 4, 5, 24</span></button>
+        <button type="button" onclick="guideGnb('install');">
+          GNB - 로그인 (INSTALL)<span>PPT page 4, 5, 24</span>
+        </button>
+        <button type="button" onclick="guideGnb('connect');">
+          GNB - 로그인 (CONNECT)<span>PPT page 4, 5, 24</span>
+        </button>
+        <button type="button" onclick="guideGnb('metamask');">
+          GNB - 로그인 (METAMASK)<span>PPT page 4, 5, 24</span>
+        </button>
+        <button type="button" onclick="modalPop('.modal-email', true);">
+          팝업 - 이메일 체크<span>PPT page 8</span>
+        </button>
+        <button type="button" onclick="modalPop('.modal-change-email', true);">
+          팝업 - 이메일 변경<span>PPT page 8</span>
+        </button>
+        <button type="button" onclick="modalPop('.modal-join', true);">팝업 - 회원가입<span>PPT page 6</span></button>
+        <button type="button" onclick="modalPop('.modal-404', true);">
+          팝업 - 토큰만료 잘못된 접근<span>PPT page 20</span>
+        </button>
+        <button type="button" onclick="modalPop('.modal-password-reset', true);">
+          팝업 - 비밀번호 변경<span>PPT page 18</span>
+        </button>
+        <button type="button" onclick="modalPop('.modal-thanks', true);">
+          팝업 - 비밀번호 변경 성공<span>PPT page 19</span>
+        </button>
+        <button type="button" onclick="modalPop('.email-auth-success', true);">
+          팝업 - 이메일 인증 성공<span>PPT page 14</span>
+        </button>
+        <button type="button" onclick="modalPop('.modal-email-update', true);">
+          팝업 - 이메일 재입력<span>PPT page 16</span>
+        </button>
+        <button type="button" onclick="modalPop('.modal-email-certification', true);">
+          팝업 - 이메일 인증 확인<span>PPT page 13</span>
+        </button>
+        <button type="button" onclick="modalPop('.modal-login', true);">
+          팝업 - 로그인<span>PPT page 4, 5, 24</span>
+        </button>
+      </div>
+    </div>
+    <script>
+      function guideGnb(type) {
+        const gnbLogin = document.querySelector('.gnb-login');
+        gnbLogin.querySelector('.header-profile').style.display = 'none';
+        gnbLogin.querySelector('ul').style.display = 'none';
+        gnbLogin.querySelectorAll('button').forEach((item) => {
+          item.style.display = 'none';
+        });
+
+        if (type === 'logout') {
+          gnbLogin.querySelector('.btn-login').style.display = 'inline-block';
+          gnbLogin.querySelector('.btn-join').style.display = 'inline-block';
+        } else if (type === 'install') {
+          gnbLogin.querySelector('.header-profile').style.display = 'inline-block';
+          gnbLogin.querySelector('ul').style.display = 'block';
+          gnbLogin.querySelector('.install').style.display = 'inline-block';
+        } else if (type === 'connect') {
+          gnbLogin.querySelector('.header-profile').style.display = 'inline-block';
+          gnbLogin.querySelector('ul').style.display = 'block';
+          gnbLogin.querySelector('.connect').style.display = 'inline-block';
+        } else if (type === 'metamask') {
+          gnbLogin.querySelector('.header-profile').style.display = 'inline-block';
+          gnbLogin.querySelector('ul').style.display = 'block';
+          gnbLogin.querySelector('.btn-gnb-login').style.display = 'inline-block';
+        }
+      }
+    </script>
+    <!-- // pub guide -->
+    <script type="text/javascript" src="scripts/common.js"></script>
+  </body>
+</html>

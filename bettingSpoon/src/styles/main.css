@@ -1,0 +1,783 @@
+/* home */
+.home {
+  padding: 25.5rem 0 0;
+  min-height: 94.2rem;
+  background-image: url(../images/bg_home.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+.home h2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -3.6rem;
+  bottom: 0.9rem;
+  z-index: -1;
+  background-color: #000;
+}
+.home .desc {
+  position: relative;
+  z-index: 1;
+  margin-top: 2.5rem;
+}
+.home .desc::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -0.2rem;
+  right: -0.5rem;
+  bottom: -2.7rem;
+  z-index: -1;
+  background-color: #000;
+}
+.home .btn-more-info {
+  margin-top: 1.5rem;
+}
+.home .title-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .guide-form {
+  margin-top: 7rem;
+}
+.home .guide-form li {
+  flex: 0 0 33%;
+  min-height: 13rem;
+  padding-left: 1.7rem;
+}
+
+/* start : 2022-04 */
+.home .btn-play-game {
+  display: inline-block;
+  width: 25.4rem;
+  height: 25.4rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  background-image: url(../images/btn_play_card.png);
+  text-indent: -9999rem;
+}
+
+/* baccarat */
+.baccarat.video-poker {
+  min-height: 94.2rem;
+  background-image: url(../images/bg_baccarat.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.baccarat .play-game {
+  max-width: 1156px;
+  margin-top: 2.4rem;
+}
+.bigwheel .guide-form,
+.lotto .guide-form {
+  display: none;
+}
+
+.bigwheel {
+  padding: 6rem 0;
+  min-height: 94.2rem;
+  background-image: url(../images/bg_bigwheel.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+.lotto {
+  padding: 6rem 0;
+  min-height: 94.2rem;
+  background-image: url(../images/bg_lotto.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+.lotto .play-game.coming-soon::after {
+  background-image: url(../images/bg_person_lotto.png);
+}
+
+/* video-poker */
+.video-poker {
+  position: relative;
+  width: 100%;
+  min-height: 94.2rem;
+  background-image: url(../images/bg_videopoker.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: auto 100%;
+}
+.video-poker .hash-tag {
+  display: inline-block;
+  margin: 0.5rem 0;
+  padding: 0.3rem 1rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #ec4318;
+  background-color: #000;
+}
+.video-poker .hash-tag::before {
+  content: '#';
+}
+.video-poker .info-box {
+  width: 67%;
+  max-width: 80rem;
+  padding: 5rem 0;
+}
+.video-poker .info-box ul {
+  padding-top: 4rem;
+}
+.video-poker .info-box li {
+  flex: 0 0 50%;
+}
+.video-poker.baccarat .info-box li {
+  padding-left: 0;
+}
+.video-poker.baccarat .info-box li em {
+  display: block;
+  font-style: normal;
+  margin-bottom: 1.2rem;
+}
+.video-poker .play-game {
+  width: 100%;
+  max-width: 80.5rem;
+  margin-top: 3.4rem;
+}
+.video-poker .play-game .btn-play-game {
+  width: 20rem;
+  height: 20rem;
+  font-size: 2.6rem;
+}
+.video-poker .guide-form li p {
+  min-height: 10rem;
+  font-size: 1.8rem;
+}
+.video-poker.baccarat .guide-form li p {
+  display: inline-block;
+  min-height: 6rem;
+  padding: 0 1.5rem;
+  background-color: #000;
+}
+.video-poker.baccarat .guide-form li p span {
+  color: #ffba00;
+}
+.video-poker .btn-more-play {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 1.1rem 2.3rem 1.1rem 4rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: #eb1616 url(../images/btn_ico_play.png) no-repeat 1rem 50% / 2.6rem auto;
+}
+.video-poker .btn-more-discord {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 1.1rem 2.3rem 1.1rem 4.5rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: #eb1616 url(../images/ico_discord_w.png) no-repeat 0.8rem 50% / 3.6rem auto;
+}
+.video-poker.baccarat .btn-more-discord {
+  margin-left: 1.5rem;
+}
+.video-poker .btn-more-board {
+  display: none;
+  position: relative;
+  z-index: 1;
+  margin-top: 1.5rem;
+  padding: 1.1rem 2.3rem 1.1rem 4.5rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: #eb1616 url(../images/btn_ico_board.png) no-repeat 1.2rem 50% / 2.8rem auto;
+}
+.video-poker .leader-board {
+  position: absolute;
+  top: 7rem;
+  right: 3rem;
+  width: 34rem;
+  height: 76rem;
+  background-color: #202020;
+  border: 0.3rem solid #ec1616;
+  box-sizing: border-box;
+}
+.video-poker .leader-board h3 {
+  position: absolute;
+  top: -1.5rem;
+  left: -0.3rem;
+  z-index: 1;
+  min-width: 22rem;
+  padding: 0.9rem 1rem;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #fff;
+  background-color: #eb1616;
+  text-align: center;
+  text-transform: uppercase;
+}
+.video-poker .leader-board dl {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+.video-poker .leader-board dt {
+  position: relative;
+  width: 100%;
+  height: 9rem;
+  padding: 5rem 1rem 1.3rem;
+  background-color: #000;
+  text-align: center;
+}
+.video-poker .leader-board dt strong {
+  font-weight: lighter;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.video-poker .leader-board dt button {
+  position: absolute;
+  top: 53%;
+  width: 2.3rem;
+  height: 2.3rem;
+  background-color: #eb1616;
+}
+.video-poker .leader-board dt button::before {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: lighter;
+  font-size: 2.6rem;
+  color: #fff;
+}
+.video-poker .leader-board dt .btn-prev {
+  left: 1.6rem;
+}
+.video-poker .leader-board dt .btn-prev::before {
+  content: '<';
+}
+.video-poker .leader-board dt .btn-next {
+  right: 1.6rem;
+}
+.video-poker .leader-board dt .btn-next::before {
+  content: '>';
+}
+.video-poker .leader-board dt button .blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+.video-poker .leader-board dd {
+  height: calc(100% - 9rem);
+  padding: 1.7rem 0.4rem 1.7rem 1.7rem;
+}
+.video-poker .leader-board dd ul {
+  height: 100%;
+  padding: 0 2.6rem 0 0;
+  overflow-y: auto;
+}
+.video-poker .leader-board dd ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.video-poker .leader-board dd ul li + li {
+  margin-top: 1.3rem;
+}
+.video-poker .leader-board dd ul li strong {
+  position: relative;
+  padding-left: 2rem;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+.video-poker .leader-board dd ul li span {
+  font-size: 1.6rem;
+  color: #ffc600;
+}
+.video-poker .leader-board dd ul li strong::before {
+  content: '>';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #a31a1a;
+}
+.video-poker .leader-board .board-nodata {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 25rem;
+  transform: translateY(-50%);
+  font-family: 'Oswald';
+  font-weight: 300;
+  font-size: 3.6rem;
+  color: #656565;
+  text-align: center;
+  background-image: url(../images/ico_nodata.png);
+  background-repeat: no-repeat;
+  background-size: 11rem auto;
+  background-position: 50% 9rem;
+}
+.video-poker.baccarat .leader-board .board-nodata {
+  height: 17rem;
+  background-image: url(../images/ico_coffee.png);
+  background-size: 7rem auto;
+  background-position: 53% 7.6rem;
+}
+.video-poker .leader-board .btn-board-close {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  text-indent: -9999rem;
+}
+.video-poker .leader-board .btn-board-close:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 3rem;
+  height: 0.2rem;
+  margin: auto;
+  background-color: #eb1616;
+  transform: rotate(45deg);
+}
+.video-poker .leader-board .btn-board-close:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 3rem;
+  height: 0.2rem;
+  margin: auto;
+  background-color: #eb1616;
+  transform: rotate(-45deg);
+}
+.full-layer-game {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #000;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  overflow-y: auto;
+  z-index: 10;
+}
+.full-layer-game.active {
+  display: block;
+}
+.full-layer-game .content-game {
+  position: relative;
+  margin-top: 7rem;
+  width: 100%;
+  height: calc(100% - 13rem);
+  min-height: 80rem;
+  overflow: auto;
+}
+.full-layer-game .pop-game {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 128rem;
+  height: 72rem;
+  margin: auto;
+}
+.full-layer-game .pop-game.full-screen .btn-game-close {
+  display: block;
+}
+.full-layer-game iframe {
+  width: 100%;
+  height: 100%;
+}
+.full-layer-game .btn-game-close {
+  display: none;
+  position: absolute;
+  top: 0.8rem;
+  right: 0.9rem;
+  width: 5.4rem;
+  height: 5.4rem;
+  background-color: #333;
+  text-indent: -999rem;
+}
+.full-layer-game .btn-game-close:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.2rem;
+  height: 3rem;
+  margin: auto;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.full-layer-game .btn-game-close:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.2rem;
+  height: 3rem;
+  margin: auto;
+  background-color: #fff;
+  transform: rotate(-45deg);
+}
+.full-layer-game .full-layer-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  background-color: #202020;
+  z-index: 2;
+}
+.full-layer-game.game-video-poker {
+  background: #000 url(../images/bg_videopoker.jpg) no-repeat 50% 0 / cover;
+}
+.full-layer-game.game-video-poker.baccarat {
+  background: #000 url(../images/bg_baccarat.jpg) no-repeat 50% 0 / cover;
+}
+.full-layer-game.game-video-poker.full-screen .content-game {
+  height: calc(100% - 7rem);
+}
+.full-layer-game.game-video-poker.full-screen .pop-game {
+  width: 100%;
+  min-height: 100%;
+  height: 50rem;
+  overflow: hidden;
+}
+.full-layer-game h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19rem;
+  height: 100%;
+}
+.full-layer-game h1 a {
+  display: block;
+  height: 100%;
+  position: relative;
+  background: url(../images/img_logo.png) no-repeat 2rem 50% / 16rem auto;
+  text-indent: -9999rem;
+}
+
+.full-layer-game .full-layer-nav {
+  text-align: center;
+}
+.full-layer-game .full-layer-nav strong {
+  display: inline-block;
+  position: relative;
+  margin-top: 0.9rem;
+  padding: 1rem;
+  font-family: 'Oswald';
+  font-weight: 300;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.full-layer-game .full-layer-nav strong:after {
+  content: '*';
+  position: absolute;
+  top: 0rem;
+  right: -0.6rem;
+  font-weight: 300;
+  font-size: 4rem;
+  color: #eb1616;
+}
+.full-layer-game .full-layer-nav .btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16rem;
+  height: 100%;
+}
+.full-layer-game .full-layer-nav .btn-group button {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.5rem;
+  text-indent: -9999rem;
+}
+.full-layer-game .full-layer-nav .btn-new-window {
+  background: url(../images/btn_new_window.png) no-repeat 50% 50% / 2.5rem auto;
+}
+.full-layer-game .full-layer-nav .btn-full-screen {
+  background: url(../images/btn_full_screen.png) no-repeat 50% 50% / 2.5rem auto;
+}
+.full-layer-game .full-layer-nav .btn-close {
+  background: url(../images/btn_close.png) no-repeat 50% 50% / 2.5rem auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+    min-height: 100%;
+    padding: 4.5rem 0;
+    background-image: url(../images/bg_home_m.jpg);
+    background-size: cover;
+  }
+
+  .home h2::after,
+  .home .desc::before {
+    display: none;
+  }
+
+  .home .title-area {
+    display: block;
+  }
+  .home .title-area .btn-area {
+    text-align: center;
+  }
+  .home .btn-play-game {
+    margin-top: 3.3rem;
+    background-image: url(../images/btn_play_card_m.png);
+  }
+  .home .guide-form {
+    margin-top: 3.7rem;
+  }
+  .home .guide-form li {
+    min-height: auto;
+  }
+
+  .baccarat .play-game {
+    max-width: 100%;
+    margin-top: 6rem;
+  }
+
+  /* baccarat */
+  .baccarat.video-poker {
+    min-height: 100%;
+    background-image: url(../images/bg_baccarat_m.jpg) !important;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  .baccarat .desc {
+    padding-right: 20rem;
+  }
+  .bigwheel .guide-form,
+  .lotto .guide-form {
+    display: block;
+    margin-top: 10rem;
+  }
+
+  .bigwheel {
+    min-height: 100%;
+    background-image: url(../images/bg_bigwheel_m.jpg);
+    background-position: 50% 0;
+    background-size: cover;
+  }
+
+  .lotto {
+    min-height: 100%;
+    background-image: url(../images/bg_lotto_m.jpg);
+    background-size: cover;
+  }
+
+  .video-poker {
+    min-height: 100%;
+    background-image: url(../images/bg_videopoker_m.jpg);
+    background-position: 50% 100%;
+    background-size: cover;
+  }
+  .video-poker .info-box {
+    width: 100%;
+    max-width: 100%;
+  }
+  .video-poker .play-game {
+    width: 100%;
+    max-width: 100%;
+  }
+  .video-poker .play-game img {
+    width: 100%;
+  }
+  .video-poker .guide-form li p {
+    min-height: auto;
+  }
+  .video-poker.baccarat .guide-form li p {
+    display: block;
+    background-color: transparent;
+  }
+  .video-poker .leader-board {
+    display: none;
+  }
+  .video-poker .leader-board.active {
+    display: block;
+    top: 11rem;
+    right: 3.5rem;
+    left: 3.5rem;
+    width: 90%;
+    height: 100%;
+    bottom: 5rem;
+    z-index: 2;
+    border-width: 0.5rem;
+  }
+  .video-poker .leader-board h3 {
+    top: auto;
+    left: 2.2rem;
+    bottom: 100%;
+    min-width: 22rem;
+    padding: 1rem 4.4rem;
+    font-size: 3.6rem;
+  }
+  .video-poker .leader-board dt {
+    height: 12rem;
+    padding: 4rem 3.6rem;
+  }
+  .video-poker .leader-board dt strong {
+    font-size: 3rem;
+  }
+  .video-poker .leader-board dt button {
+    top: 50%;
+    width: 5rem;
+    height: 5rem;
+    transform: translateY(-50%);
+  }
+  .video-poker .leader-board dt button::before {
+    top: 36%;
+    left: 50%;
+    font-size: 5rem;
+  }
+  .video-poker .leader-board dt .btn-prev {
+    left: 3.6rem;
+  }
+  .video-poker .leader-board dt .btn-next {
+    right: 3.6rem;
+  }
+  .video-poker .leader-board dd {
+    height: calc(100% - 12rem);
+    padding: 2.8rem 0.4rem 2.8rem 6rem;
+  }
+  .video-poker .leader-board dd ul {
+    padding: 0 7.6rem 0 0;
+  }
+  .video-poker .leader-board dd ul li + li {
+    margin-top: 3rem;
+  }
+  .video-poker .leader-board dd ul li strong {
+    padding-left: 3.3rem;
+    font-size: 2.4rem;
+  }
+  .video-poker .leader-board dd ul li span {
+    font-size: 2.4rem;
+  }
+  .video-poker .leader-board .board-nodata {
+    height: 36rem;
+    font-size: 4.8rem;
+    background-position: 50% 12rem;
+    background-size: 16.7rem auto;
+  }
+  .video-poker.baccarat .leader-board .board-nodata {
+    height: 29rem;
+    background-repeat: no-repeat;
+    background-size: 15rem auto;
+    background-position: 53% 11rem;
+  }
+  .video-poker .leader-board .btn-board-close {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    top: auto;
+    right: 1.4rem;
+    bottom: 100%;
+  }
+  .video-poker .leader-board .btn-board-close:before {
+    width: 6rem;
+    height: 0.5rem;
+  }
+  .video-poker .leader-board .btn-board-close:after {
+    width: 6rem;
+    height: 0.5rem;
+  }
+  .video-poker .desc {
+    padding-right: 21rem;
+  }
+  .video-poker .btn-more-board {
+    display: inline-block;
+    position: absolute;
+    top: 11.2rem;
+    right: 3.8rem;
+    margin-top: 0;
+  }
+  .full-layer-game .full-layer-nav .btn-close {
+    width: 7rem;
+    height: 7rem;
+    background-size: 4rem auto;
+  }
+  .video-poker .play-game {
+    margin-top: 5rem;
+  }
+  .video-poker.baccarat .play-game {
+    margin-top: 8rem;
+  }
+  /* end : 2022-04 */
+  .video-poker .play-game .btn-play-game {
+    width: 16rem;
+    height: 16rem;
+    font-size: 2.2rem;
+    background-size: 100% auto;
+  }
+  .full-layer-game h1 {
+    width: 22rem;
+  }
+  .full-layer-game h1 a {
+    background-position: 4rem 50%;
+    background-size: 18rem auto;
+  }
+  .full-layer-game .full-layer-nav strong {
+    margin-top: 2.2rem;
+    font-size: 3rem;
+  }
+  .full-layer-game .full-layer-nav strong:after {
+    top: -0.2rem;
+    right: -1rem;
+    font-size: 5rem;
+  }
+  .full-layer-game .full-layer-nav .btn-new-window,
+  .full-layer-game .full-layer-nav .btn-full-screen {
+    display: none !important;
+  }
+  .full-layer-game .full-layer-nav .btn-group {
+    width: 10rem;
+  }
+  .full-layer-game .full-layer-nav {
+    display: none;
+    height: 10.8rem;
+  }
+  .full-layer-game .content-game {
+    margin-top: 0;
+    height: 100%;
+  }
+  .full-layer-game .pop-game {
+    width: 100%;
+    height: 100%;
+  }
+  .full-layer-game .btn-game-close {
+    display: none;
+  }
+  .full-layer-game footer {
+    display: none;
+  }
+}

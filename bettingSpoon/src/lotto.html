@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Betting Spoon</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div id="root">
+      <!-- header (include) -->
+      <header>
+        <div class="inner">
+          <h1>
+            <a href="index.html">SPONNER NFT</a>
+          </h1>
+          <button type="button" class="btn-nav-toggle" onclick="mobileNavToggle();">
+            <span>메뉴</span>
+          </button>
+          <nav id="nav">
+            <div class="nav-inner">
+              <ul>
+                <li>
+                  <a href="index.html" id="index"><span>HOME</span></a>
+                </li>
+                <li>
+                  <a href="videoPoker.html" id="videoPoker"><span>VIDEO POKER</span></a>
+                </li>
+                <li>
+                  <a href="baccarat.html" id="baccarat"><span>BACCARAT</span></a>
+                </li>
+                <li>
+                  <a href="bigwheel.html" id="bigwheel"><span>BIGWHEEL</span></a>
+                </li>
+                <li>
+                  <a href="lotto.html" id="lotto"><span>LOTTO</span></a>
+                </li>
+              </ul>
+              <div class="btn-group">
+                <button type="button" class="btn-discord" onclick="window.open('https://discord.gg/spooner-nft');">
+                  discord
+                </button>
+                <button type="button" class="btn-twitter" onclick="window.open('https://twitter.com/SPOONER_NFT');">
+                  twitter
+                </button>
+                <div class="gnb-login">
+                  <button
+                    type="button"
+                    class="btn-metamask"
+                    onclick="setLogin('0x72f29ef34139313246a1a4s4f24de372aaf3e0');"
+                  >
+                    INSTALL METAMASK
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- // header (include) -->
+      <main>
+        <section class="lotto">
+          <div class="inner">
+            <h2>lotto</h2>
+            <p class="desc">3/8 LOTTO, 4/10 LOTTO games are to be released soon.</p>
+            <div class="play-game coming-soon">
+              <img class="pc" src="./images/img_lotto.jpg" alt="" />
+              <img class="mobile" src="./images/img_lotto_m.jpg" alt="" />
+            </div>
+            <ul class="guide-form">
+              <li>
+                <strong>video poker event</strong>
+                <p>
+                  This is an event game for SPOONER NFT members.<br />
+                  Catch the Royal Flush! Punch in your luck on Discord.<br />
+                  Prizes are waiting for you!
+                </p>
+                <a href="videoPoker.html" class="btn-more-info"><span>more info</span></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!-- footer (include) -->
+      <footer>
+        <div class="inner">
+          <a href="index.html" class="footer-logo">BettingSpoon</a>
+          <span>&copy; 2022 BETTINGSPOON. ALL RIGHTS RESERVED.</span>
+        </div>
+      </footer>
+      <aside>
+        <div class="pop-modal modal-alert">
+          <div class="modal-dimmed" onclick="modalPop('.modal-alert', false);"></div>
+          <div class="modal-content">
+            <p class="modal-alert-comment"></p>
+            <button
+              type="button"
+              class="btn-modal-base btn-alert-close"
+              onclick="modalPop('.modal-alert', false);"
+            ></button>
+          </div>
+        </div>
+      </aside>
+      <!-- // footer (include) -->
+    </div>
+    <script type="text/javascript" src="scripts/common.js"></script>
+  </body>
+</html>

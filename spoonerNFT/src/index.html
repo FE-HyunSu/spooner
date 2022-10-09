@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spooner NFT</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <div class="inner">
+          <h1>
+            <a href="#" onclick="scrollMove('#root'); return false;"
+              >SPONNER NFT</a
+            >
+          </h1>
+          <button
+            type="button"
+            class="btn-nav-toggle"
+            onclick="mobileNavToggle();"
+          >
+            <span>메뉴</span>
+          </button>
+          <nav id="nav">
+            <div class="nav-inner">
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    onclick="scrollMove('.online-service'); return false;"
+                    >spooner nft</a
+                  >
+                </li>
+                <li>
+                  <a href="#" onclick="scrollMove('.own-2-earn'); return false;"
+                    >own 2 earn</a
+                  >
+                </li>
+                <li>
+                  <a href="#" onclick="scrollMove('.benefits'); return false;"
+                    >benefits</a
+                  >
+                </li>
+                <li>
+                  <a href="#" onclick="scrollMove('.whitelist'); return false;"
+                    >whitelist</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onclick="scrollMove('.spooner-nft'); return false;"
+                    >mint</a
+                  >
+                </li>
+                <!-- <li><a href="#" onclick="alert('coming soon'); return false;">roadmap</a></li> -->
+                <li>
+                  <a href="https://white.bettingspoon.com" target="_blank"
+                    >whitepaper</a
+                  >
+                </li>
+              </ul>
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn-discord"
+                  onclick="window.open('https://discord.gg/spooner-nft');"
+                >
+                  discord
+                </button>
+                <button
+                  type="button"
+                  class="btn-twitter"
+                  onclick="window.open('https://twitter.com/SPOONER_NFT');"
+                >
+                  twitter
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="visual">
+          <div class="inner">
+            <h2>SPOONER NFT</h2>
+            <h3>Online Gambling Digital Collectibles</h3>
+            <p class="desc">
+              SPOONER NFT is a non-fungible token that digitizes the online
+              gambling assets minted by the Bettingspoon. It distributes the
+              profits linked to the online gambling service of Bettingspoon to
+              NFT holders.
+            </p>
+            <div class="btn-area">
+              <a
+                href="https://discord.gg/spooner-nft"
+                class="btn"
+                target="_blank"
+              >
+                <img src="./images/btn_join.png" alt="join our discord" />
+              </a>
+              <a
+                href="https://white.bettingspoon.com"
+                class="btn"
+                target="_blank"
+              >
+                <img src="./images/btn_white_paper.png" alt="white paper" />
+              </a>
+            </div>
+            <div class="timer-area">
+              <p>Spooner NFT <span>Presale</span></p>
+              <div class="timer-box">
+                <div id="days"></div>
+                <div id="hours"></div>
+                <div id="min"></div>
+              </div>
+            </div>
+          </div>
+          <img class="mobile" src="./images/bg_visual_m.png" alt="" />
+        </section>
+        <section class="online-service">
+          <div class="inner">
+            <div class="txt-area">
+              <h2>SPOONER NFT</h2>
+              <h3>BETTINGSPOON OPERATES 5 ONLINE SERVICES:</h3>
+              <p class="desc">
+                Sports Betting, Table Game, Slot, Poker, and Original Game.
+                SPOONER NFT is an NFT minted by Bettingspoon and is a token that
+                digitalizes the assets of Bettingspoon online gambling service.
+                We have minted a total of 11,584 SPOONER NFTs, that can get
+                investors the ownership and profitability of the Ethereum
+                blockchain.
+              </p>
+              <p class="desc">
+                SPOONER-NFT is based on the ERC-1155 standard. SPOONER NFT will
+                distribute SPOONER NFT holders a portion of the revenue
+                associated with Bettingspoon's online gambling business. This
+                will be the key that can further increase the value of the
+                SPOONER-NFT, and will be highlighted in the NFT Marketplace.
+              </p>
+              <span class="ico-jackpot">
+                <img src="./images/ico_jackpot.png" alt="" />
+                <img
+                  class="img-mobile"
+                  src="./images/ico_jackpot_m.png"
+                  alt=""
+                />
+              </span>
+            </div>
+            <div class="btn-area">
+              <button
+                class="btn a-class"
+                onclick="modalPlayer('https://player.vimeo.com/video/673045195', 720,720);"
+              >
+                <img src="./images/ico_a_class.png" alt="" />
+                <img
+                  class="img-mobile"
+                  src="./images/ico_a_class_m.png"
+                  alt=""
+                />
+              </button>
+              <button
+                class="btn k-class"
+                onclick="modalPlayer('https://player.vimeo.com/video/673045195', 720,720);"
+              >
+                <img src="./images/ico_k_class.png" alt="" />
+                <img
+                  class="img-mobile"
+                  src="./images/ico_k_class_m.png"
+                  alt=""
+                />
+              </button>
+              <button
+                class="btn q-class"
+                onclick="modalPlayer('https://player.vimeo.com/video/673045195', 720,720);"
+              >
+                <img src="./images/ico_q_class.png" alt="" />
+                <img
+                  class="img-mobile"
+                  src="./images/ico_q_class_m.png"
+                  alt=""
+                />
+              </button>
+              <button
+                class="btn j-class"
+                onclick="modalPlayer('https://player.vimeo.com/video/673045195', 720,720);"
+              >
+                <img src="./images/ico_j_class.png" alt="" />
+                <img
+                  class="img-mobile"
+                  src="./images/ico_j_class_m.png"
+                  alt=""
+                />
+              </button>
+              <button
+                class="btn ten-class"
+                onclick="modalPlayer('https://player.vimeo.com/video/673045195', 720,720);"
+              >
+                <img src="./images/ico_10_class.png" alt="" />
+                <img
+                  class="img-mobile"
+                  src="./images/ico_10_class_m.png"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="own-2-earn">
+          <div class="inner">
+            <h2>OWN 2 EARN</h2>
+            <h3>OWN 2 tEARN</h3>
+            <p class="desc">
+              In gaming NFTs, it is mostly a Play 2 Earn (P2E) structure in
+              which NFTs are purchased and profits are earned through
+              gameplay.<br />
+              However, SPOONER NFT is a way to earn money just by holding the
+              ownership of the game without playing it. We named it OWN 2 EARN
+              in a way that provides profits just by owning the SPOONER NFT.
+            </p>
+            <h3>REVENUE SPOONER NFT HOLDERS CAN EARN</h3>
+            <p class="desc">
+              90% of NFT CASINO revenue operated by Bettingspoon will be
+              distributed fairly to NFT holders based on the dividend rate of
+              NFTs they hold.<br />
+              We will pay the revenue to the NFT holder to their wallet address
+              on a daily basis.
+            </p>
+            <div class="btn-area">
+              <img class="mobile" src="./images/bg_own_2_earn.png" alt="" />
+              <a
+                href="#"
+                class="btn-move"
+                onclick="scrollMove('.benefits'); return false;"
+              >
+                <span>Check out your future income!</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="benefits">
+          <div class="inner">
+            <h2>BENEFITS</h2>
+            <h3>Check out your future income!</h3>
+            <p class="desc">
+              This is a profit simulator which calculates the future income you
+              will get if you own SPOONER NFT. <br />You can also find the
+              expected rate of returns by selecting the NFT grade and quantity
+              you want to own.
+            </p>
+            <p class="desc v2 mobile">
+              Distribution of 90% of 1 day revenue from NFT CASINO: Calculated
+              on the basis of $300,000 (1ETH = $4,000).
+            </p>
+            <p class="desc v2 mobile">
+              If you select 'SPOONER NFT Grade' and 'MINT', the expected rate of
+              return will be calculated automatically.
+            </p>
+            <div class="select-area">
+              <p class="desc v2">
+                Distribution of 90% of 1 day revenue from NFT CASINO: Calculated
+                on the basis of $300,000 (1ETH = $4,000).
+              </p>
+              <p class="desc v2">
+                If you select 'SPOONER NFT Grade' and 'MINT', the expected rate
+                of return will be calculated automatically.
+              </p>
+              <div class="flex-form">
+                <div class="investment-area">
+                  <strong class="title">INVESTMENT</strong>
+                  <div class="select-form">
+                    <select
+                      class="default-select"
+                      name="gradeSelect"
+                      id="gradeSelect"
+                      onchange="setBenefitInfo();"
+                    >
+                      <option value="default" disabled selected hidden>
+                        NFT GRADE
+                      </option>
+                    </select>
+                  </div>
+                  <div class="select-form">
+                    <select
+                      class="default-select mint-select"
+                      name="mintSelect"
+                      id="mintSelect"
+                      onchange="setBenefitInfo();"
+                    >
+                      <option value="0" disabled selected hidden>MINT</option>
+                    </select>
+                  </div>
+                  <div class="input-form">
+                    <strong class="sub-title">PRICE</strong>
+                    <div class="price-box">
+                      <p style="border-bottom: 1px solid #825bdc" id="priceBox">
+                        0.0
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="ico-arrow">
+                  <img src="./images/ico_arrow_down.png" alt="" />
+                </div>
+                <div class="income-area">
+                  <strong class="title" style="color: #00baff">INCOME</strong>
+                  <div class="input-form">
+                    <strong class="sub-title">Revenue ( 1 month )</strong>
+                    <div class="price-box">
+                      <p id="revenueBox">0.00000000</p>
+                    </div>
+                  </div>
+                  <div class="input-form rate">
+                    <strong class="sub-title">Rate of returns</strong>
+                    <div class="price-box">
+                      <p id="returnRateBox">00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="result">
+                  ※ This is the expected rate of returns from
+                  <span id="gradeInfoBox">- - Class</span> NFTs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="whitelist">
+          <div class="inner">
+            <h2>WHITELIST</h2>
+            <h3>Only the first 400 Wallet limited (30% discount)</h3>
+            <p class="desc">
+              To participate in SPOONER NFT Presale, you must register on the
+              SPOONER Whitelist.<br />
+              An e-wallet address is required for whitelist registration.
+              <br />If only wallet address information is used when connecting
+              to an e-wallet, no payment will be processed.
+            </p>
+            <!-- [D]지갑 로그아웃 상태 -->
+            <div class="logout" style="display: none">
+              <div class="img-area">
+                <img src="./images/img_whitelist.png" alt="" />
+              </div>
+              <div class="btn-area">
+                <strong>SPOONER NFT WHITELIST JOIN</strong>
+                <!-- [D] 앱이 설치 안되어 있을 경우 팝업 노출되게 해놨습니다. 
+									추후 수정 시에 onclick="modalPop('.modal-metamask', true);" 제거 하면 됩니다.
+								-->
+                <a
+                  href="#;"
+                  class="btn"
+                  onclick="modalPop('.modal-metamask', true);"
+                >
+                  <span>CONNECT WALLET</span>
+                </a>
+                <!-- [D] 지갑 설치가 되어있지 않을 때 노출 -->
+                <a href="https://metamask.io/" target="_blank" class="btn">
+                  <span>INSTALL WALLWE </span>
+                </a>
+              </div>
+            </div>
+            <!-- [D]지갑 로그인 상태 -->
+            <div class="whitelist-apply login" style="display: block">
+              <p class="sub-title">SPOONER NFT WHITELIST JOIN</p>
+              <p class="sub-desc">
+                Wallet Connected : <strong>0x7b55...ea52</strong>
+              </p>
+              <div class="count-box">
+                <ul>
+                  <li>
+                    <strong class="pc"> Q CLASS </strong>
+                    <div class="img-box">
+                      <img src="./images/ico_q_class.png" alt="" />
+                    </div>
+                    <div class="select-form">
+                      <strong class="mobile"> Q CLASS </strong>
+                      <select
+                        class="default-select mint-select"
+                        name="qClassMint"
+                        id="qClassMint"
+                        onchange="onChangeWhiteList();"
+                      >
+                        <option value="0" disabled selected hidden>MINT</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <strong class="pc"> J CLASS </strong>
+                    <div class="img-box">
+                      <img src="./images/ico_j_class.png" alt="" />
+                    </div>
+                    <div class="select-form">
+                      <strong class="mobile"> J CLASS </strong>
+                      <select
+                        class="default-select mint-select"
+                        name="jClassMint"
+                        id="jClassMint"
+                        onchange="onChangeWhiteList();"
+                      >
+                        <option value="0" disabled selected hidden>MINT</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <strong class="pc"> 10 CLASS </strong>
+                    <div class="img-box">
+                      <img src="./images/ico_10_class.png" alt="" />
+                    </div>
+                    <div class="select-form">
+                      <strong class="mobile"> 10 CLASS </strong>
+                      <select
+                        class="default-select mint-select"
+                        name="tenClassMint"
+                        id="tenClassMint"
+                        onchange="onChangeWhiteList();"
+                      >
+                        <option value="0" disabled selected hidden>MINT</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-area">
+                <a href="#;" class="btn" onclick="checkWhiteList()">
+                  <span>APPLY</span>
+                </a>
+              </div>
+            </div>
+            <!-- [D] 수량 등록 완료 -->
+            <div class="apply-complete" style="display: none">
+              <p class="sub-title">SPOONER NFT WHITELIST JOIN</p>
+              <p class="sub-desc">
+                <span>Congratulations! </span>
+                Your Whitelist registration has been successfully received.<br />
+                Please check Discord for the details of the Presale!
+              </p>
+              <div class="count-box">
+                <ul>
+                  <li>
+                    <strong class="pc"> Q CLASS </strong>
+                    <div class="img-box">
+                      <img src="./images/ico_q_class.png" alt="" />
+                    </div>
+                    <div class="select-form">
+                      <strong class="mobile"> Q CLASS </strong>
+                      <div class="num-box" id="applyCountQ">0</div>
+                    </div>
+                  </li>
+                  <li>
+                    <strong class="pc"> J CLASS </strong>
+                    <div class="img-box">
+                      <img src="./images/ico_j_class.png" alt="" />
+                    </div>
+                    <div class="select-form">
+                      <strong class="mobile"> J CLASS </strong>
+                      <div class="num-box" id="applyCountJ">0</div>
+                    </div>
+                  </li>
+                  <li>
+                    <strong class="pc"> 10 CLASS </strong>
+                    <div class="img-box">
+                      <img src="./images/ico_10_class.png" alt="" />
+                    </div>
+                    <div class="select-form">
+                      <strong class="mobile"> 10 CLASS </strong>
+                      <div class="num-box" id="applyCountTen">0</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-area">
+                <a
+                  href="https://discord.com/invite/spooner-nft"
+                  class="btn"
+                  target="_blank"
+                >
+                  <span>Join our Discord</span>
+                </a>
+              </div>
+            </div>
+            <!-- [D] 화이트리스트 등록 마감 상태 -->
+            <div class="end" style="display: none">
+              <p class="sub-title">SPOONER NFT WHITELIST JOIN</p>
+              <div class="count-box">
+                <ul>
+                  <li>
+                    <strong class="pc"> Q CLASS </strong>
+                    <div class="img-box">
+                      <img src="./images/ico_q_class.png" alt="" />
+                    </div>
+                    <div class="select-form">
+                      <strong class="mobile"> Q CLASS </strong>
+                    </div>
+                  </li>
+                  <li>
+                    <strong class="pc"> J CLASS </strong>
+                    <div class="img-box">
+                      <img src="./images/ico_j_class.png" alt="" />
+                    </div>
+                    <div class="select-form">
+                      <strong class="mobile"> J CLASS </strong>
+                    </div>
+                  </li>
+                  <li>
+                    <strong class="pc"> 10 CLASS </strong>
+                    <div class="img-box">
+                      <img src="./images/ico_10_class.png" alt="" />
+                    </div>
+                    <div class="select-form">
+                      <strong class="mobile"> 10 CLASS </strong>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-area">
+                <!-- [D] 앱이 설치 안되어 있을 경우 팝업 노출되게 해놨습니다. 
+									추후 수정 시에 onclick="modalPop('.modal-metamask', true);" 제거 하면 됩니다.
+								-->
+                <a
+                  href="#;"
+                  class="btn"
+                  onclick="modalPop('.modal-metamask', true);"
+                >
+                  <span>Application Status</span>
+                </a>
+              </div>
+              <strong class="end-notice">WHITELIST ENDED</strong>
+              <strong class="end-notice mobile">WHITELIST<br />ENDED</strong>
+            </div>
+          </div>
+        </section>
+        <section class="spooner-nft">
+          <div class="inner">
+            <h2>SPOONER NFT</h2>
+            <p class="desc">
+              SPOONER NFT IS A NON-FUNGIBLE TOKEN THAT DIGITIZES<br />
+              THE ONLINE GAMBLING ASSETS MINTED BY THE BETTINGSPOON.<br />
+              IT DISTRIBUTES THE PROFITS LINKED TO THE ONLINE GAMBLING<br />
+              SERVICE OF BETTINGSPOON TO NFT HOLDERS.
+            </p>
+            <div class="btn-area">
+              <a
+                href="https://discord.gg/spooner-nft"
+                class="btn"
+                target="_blank"
+              >
+                <img src="./images/btn_join.png" alt="join our discord" />
+              </a>
+              <a
+                href="https://white.bettingspoon.com"
+                class="btn"
+                target="_blank"
+              >
+                <img src="./images/btn_white_paper.png" alt="white paper" />
+              </a>
+              <a
+                href="https://white.bettingspoon.com/bettingspoon/faq"
+                class="btn"
+                target="_blank"
+              >
+                <img src="./images/btn_faq.png" alt="faq" />
+              </a>
+            </div>
+          </div>
+          <video muted autoplay loop>
+            <source src="./video/polina.mp4" type="video/mp4" />
+          </video>
+        </section>
+        <button
+          type="button"
+          class="btn-fixed-top"
+          onclick="scrollMove('#root');"
+        >
+          처음으로
+        </button>
+        <aside>
+          <div class="pop-modal modal-alert">
+            <div
+              class="modal-dimmed"
+              onclick="modalPop('.modal-alert', false);"
+            ></div>
+            <div class="modal-content">
+              <p class="modal-alert-comment"></p>
+              <button
+                type="button"
+                class="btn-modal-base"
+                onclick="modalPop('.modal-alert', false);"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+          <div class="pop-modal modal-metamask">
+            <div
+              class="modal-dimmed"
+              onclick="modalPop('.modal-metamask', false);"
+            ></div>
+            <div class="modal-content">
+              <p>
+                We couldn't detect any wallets on your device.<br />Click the
+                button above to install MetaMask.
+              </p>
+            </div>
+          </div>
+          <div class="pop-modal modal-whitelist">
+            <div
+              class="modal-dimmed"
+              onclick="modalPop('.modal-whitelist', false);"
+            ></div>
+            <div class="modal-content">
+              <p id="whiteListCheck" class="info-box"></p>
+              <p>Would you like to processed with the reservation?</p>
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn-modal-base type-yellow"
+                  onclick="whiteListSubmit();"
+                >
+                  OK
+                </button>
+                <button
+                  type="button"
+                  class="btn-modal-base"
+                  onclick="modalPop('.modal-whitelist', false);"
+                >
+                  CANCEL
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pop-modal modal-player">
+            <div
+              class="modal-dimmed"
+              onclick="modalPop('.modal-player', false); document.querySelector('.modal-content-player').innerHTML='';"
+            ></div>
+            <div class="modal-content-player"></div>
+          </div>
+        </aside>
+      </main>
+      <footer>
+        <div class="inner">
+          <a
+            href="#"
+            onclick="scrollMove('#root',100); return false;"
+            class="footer-logo"
+          >
+            <img src="./images/ico_logo_before.png" alt="sppner nft" />
+          </a>
+          <div class="ico-lists">
+            <a
+              href="https://discord.com/invite/spooner-nft"
+              target="_blank"
+              class="ico"
+            >
+              <img src="./images/ico_footer_discord.png" alt="" />
+            </a>
+            <a
+              href="https://twitter.com/spooner_nft"
+              target="_blank"
+              class="ico"
+            >
+              <img src="./images/ico_footer_twitter.png" alt="" />
+            </a>
+            <a
+              href="https://twitter.com/spooner_nft"
+              target="_blank"
+              class="ico"
+            >
+              <img src="./images/ico_footer_faq.png" alt="" />
+            </a>
+          </div>
+          <address>
+            &copy; Copyright 2022, Bettingspoon. All Rights Reserved
+          </address>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="scripts/common.js"></script>
+  </body>
+</html>

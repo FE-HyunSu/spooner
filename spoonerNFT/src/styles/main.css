@@ -1,0 +1,863 @@
+.visual {
+  overflow: hidden;
+  position: relative;
+  height: 100rem;
+  padding-top: 4.8rem;
+}
+.visual::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(#47229c, #2b1460);
+}
+.visual .mobile {
+  display: none;
+}
+.visual .inner {
+  z-index: 5;
+}
+.visual .inner::after {
+  content: '';
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  z-index: 1;
+  width: 142.9rem;
+  height: 87.9rem;
+  background: url(../images/bg_visual_pc.png) 50% 0 no-repeat;
+  background-size: 100% auto;
+}
+.visual h2 + h3 {
+  margin-top: 1.3rem;
+}
+.visual .desc {
+  width: 42rem;
+  font-size: 1.6rem;
+}
+.visual .timer-area {
+  margin-top: 5rem;
+}
+.visual .timer-area p {
+  font-size: 3rem;
+  color: #a47dfd;
+  font-family: 'Oswald';
+}
+.visual .timer-area p span {
+  color: #ffba00;
+}
+.visual .timer-area .timer-box {
+  margin-top: 1.5rem;
+}
+.visual .timer-area .timer-box > div {
+  display: inline-block;
+  position: relative;
+  width: 10rem;
+  height: 7.3rem;
+  margin-right: 2rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #c1a7fc;
+  font-family: 'Oswald';
+  letter-spacing: 3.45rem;
+  background: url(../images/bg_timer_box.png) 0 0 no-repeat;
+}
+.visual .timer-area .timer-box > div::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #7a48e9;
+  letter-spacing: normal;
+}
+.visual .timer-area .timer-box #days::after {
+  content: 'DAYS';
+}
+.visual .timer-area .timer-box #hours::after {
+  content: 'HOURS';
+}
+.visual .timer-area .timer-box #min::after {
+  content: 'MINUTES';
+}
+.visual .btn-area {
+  margin-top: 2.7rem;
+}
+.spooner-nft .btn-area .btn,
+.visual .btn-area .btn {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  width: 14.3rem;
+  height: 6.2rem;
+  text-align: center;
+  color: #fff;
+  background: #4d23b2;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2.5rem;
+  transition: all 0.25s linear;
+}
+.spooner-nft .btn-area .btn:hover,
+.visual .btn-area .btn:hover {
+  background: #9c75f7;
+}
+
+.visual .btn-area .btn + .btn {
+  margin-left: 1.3rem;
+}
+
+.online-service {
+  overflow: hidden;
+  position: relative;
+  padding-top: 15.4rem;
+  padding-bottom: 18.4rem;
+  background: linear-gradient(#48239d, #210f4c);
+}
+.online-service .txt-area {
+  position: relative;
+  padding-right: 42rem;
+}
+.online-service .txt-area .ico-jackpot {
+  position: absolute;
+  top: -1.5rem;
+  right: -2rem;
+}
+.online-service .img-mobile {
+  display: none;
+}
+.online-service .btn-area {
+  margin-top: 11rem;
+  white-space: nowrap;
+}
+.online-service .btn-area .btn {
+  display: inline-block;
+  padding-bottom: 2.3rem;
+  position: relative;
+}
+.online-service .btn-area .btn::after {
+  position: absolute;
+  left: 3.2rem;
+  bottom: 0;
+  padding: 0.9rem 1.5rem 1.3rem 4rem;
+  font-size: 2rem;
+  color: #fff;
+  background: #49269c url(../images/ico_tri.png) 20% 50% no-repeat;
+  border-radius: 1.5rem;
+}
+.online-service .btn-area .a-class::after {
+  content: 'A class';
+}
+.online-service .btn-area .k-class::after {
+  content: 'K class';
+}
+.online-service .btn-area .q-class::after {
+  content: 'Q class';
+}
+.online-service .btn-area .j-class::after {
+  content: 'J class';
+}
+.online-service .btn-area .ten-class::after {
+  content: '10 class';
+}
+.online-service .btn-area .btn + .btn {
+  margin-left: -7.5rem;
+}
+
+.own-2-earn {
+  position: relative;
+  padding-top: 16rem;
+  padding-bottom: 18.4rem;
+  background: linear-gradient(#421f90, #210f4c);
+}
+.own-2-earn .btn-area {
+  position: relative;
+  height: 42.3rem;
+  margin-top: 6.7rem;
+  background: url(../images/bg_own_2_earn_pc.png) 50% 0 no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+}
+.own-2-earn .btn-area .mobile {
+  display: none;
+}
+.own-2-earn .btn-area .btn-move {
+  position: absolute;
+  bottom: 7.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.4rem 1.1em 2rem;
+  font-size: 2.4rem;
+  font-family: 'Oswald';
+  background-color: #532bb0;
+  border-radius: 2rem;
+}
+
+.benefits {
+  position: relative;
+  padding-top: 14rem;
+  padding-bottom: 18rem;
+  background: linear-gradient(#421f90, #210f4c);
+  font-family: 'Oswald';
+}
+.benefits .mobile {
+  display: none;
+}
+.benefits .select-area {
+  margin-top: 3rem;
+  padding: 4rem 11.1rem 10rem 11.1rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  text-align: center;
+  border-radius: 5rem;
+}
+.benefits .select-area .desc {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.6rem;
+  text-align: left;
+}
+.benefits .select-area .flex-form {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 4.7rem;
+}
+.benefits .select-area .flex-form > div {
+  width: 30.3rem;
+}
+.benefits .select-area .flex-form .result {
+  position: absolute;
+  right: 0;
+  bottom: -5rem;
+  font-size: 1.4rem;
+}
+.benefits .select-area .title {
+  display: block;
+  margin-bottom: 3.7rem;
+  font-weight: normal;
+  font-size: 3.6rem;
+  color: #ffba00;
+}
+.benefits .select-form + .select-form {
+  margin-top: 0.9rem;
+}
+.benefits .input-form {
+  margin-top: 3.1rem;
+}
+.benefits .input-form .sub-title {
+  display: block;
+  padding-left: 4.5rem;
+  font-weight: 300;
+  font-size: 2.4rem;
+  text-align: left;
+}
+.benefits .input-form .price-box {
+  width: 100%;
+  height: 7rem;
+  margin-top: 0.6rem;
+  padding: 1rem 3rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #23065c;
+  border-radius: 2rem;
+}
+.benefits .input-form .price-box p {
+  position: relative;
+  padding-right: 3.8rem;
+  font-size: 2.8rem;
+  line-height: 1.7;
+}
+.benefits .input-form .price-box p::after {
+  content: 'ETH';
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #ffba00;
+}
+.benefits .input-form.rate .price-box {
+  height: 11.5rem;
+  padding: 0rem 7rem 2.05rem;
+}
+.benefits .input-form.rate .price-box p {
+  padding-right: 0;
+  font-size: 6rem;
+}
+.benefits .input-form.rate .price-box p::after {
+  content: '%';
+  display: inline-block;
+  position: relative;
+  top: 0;
+  margin-left: 0.8rem;
+  font-size: 4.8rem;
+  font-weight: 400;
+}
+.benefits .ico-arrow {
+  margin: 12rem 0;
+  transform: rotate(270deg);
+}
+.benefits .result {
+  margin-top: 10rem;
+  font-size: 2.8rem;
+  color: #b093f7;
+  line-height: 1.7;
+}
+
+.whitelist {
+  position: relative;
+  padding-top: 14rem;
+  padding-bottom: 15rem;
+  background: linear-gradient(#401e8c, #271256);
+  text-align: center;
+}
+.whitelist h3 {
+  color: #ffc000;
+}
+.whitelist .logout {
+  margin-top: 3rem;
+}
+.whitelist .img-area {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.whitelist .btn-area {
+  text-align: center;
+}
+.whitelist .btn-area strong {
+  display: block;
+  font-size: 2.4rem;
+  font-family: 'Oswald';
+}
+.whitelist .btn-area .btn {
+  display: block;
+  width: 33.3rem;
+  margin: 3rem auto 0;
+  padding: 1.8rem 4rem 1.9rem;
+  font-weight: 400;
+  font-size: 3rem;
+  font-family: 'Oswald';
+  color: #fff;
+  background-color: #6132c8;
+  border-radius: 2.2rem;
+}
+.whitelist .btn-area .btn + .btn {
+  margin-top: 1.3rem;
+}
+.whitelist .login,
+.whitelist .apply-complete {
+  margin-top: 4.8rem;
+}
+.whitelist .end {
+  position: relative;
+  margin-top: 3.5rem;
+}
+.whitelist .end .count-box {
+  opacity: 0.3;
+}
+.whitelist .end .end-notice {
+  position: absolute;
+  top: 50%;
+  left: 23.5rem;
+  right: 23.5rem;
+  transform: translateY(-50%);
+  padding: 2.1rem 0;
+  font-weight: 300;
+  font-size: 7rem;
+  font-family: 'Oswald';
+  color: #ffc000;
+  border-top: 0.8rem solid #ffc000;
+  border-bottom: 0.8rem solid #ffc000;
+  text-align: center;
+  line-height: 1.2;
+}
+.whitelist .end .end-notice.mobile {
+  display: none;
+}
+.whitelist .sub-title,
+.whitelist .sub-desc {
+  font-size: 2.1rem;
+  text-align: center;
+}
+.whitelist .sub-desc strong {
+  color: #00f0ff;
+}
+.whitelist .sub-desc {
+  margin-top: 1rem;
+  line-height: 1.45;
+}
+.whitelist .sub-desc span {
+  display: block;
+  color: #ffc000;
+}
+.whitelist .count-box {
+  margin-top: 2.3rem;
+  padding: 0 7.5rem;
+}
+.whitelist .count-box ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.whitelist .count-box li {
+  display: block;
+  position: relative;
+  padding-top: 3.5rem;
+}
+.whitelist .count-box li .pc {
+  font-size: 3.2rem;
+  color: #ffba00;
+  font-family: 'Oswald';
+}
+.whitelist .end .count-box li .select-form::after,
+.whitelist .apply-complete .count-box li .select-form::after {
+  display: none;
+}
+.whitelist .count-box li .select-form {
+  width: 22.3rem;
+  margin: 0 auto;
+}
+.whitelist .count-box li .select-form .num-box {
+  display: inline-block;
+  position: absolute;
+  left: -2.5rem;
+  bottom: 3.5rem;
+  width: 11.2rem;
+  height: 7rem;
+  padding: 1rem;
+  font-size: 3.6rem;
+  color: #fff;
+  font-family: 'Oswald';
+  background: #532bb0;
+  border-radius: 2rem;
+  text-align: center;
+}
+.whitelist .count-box li .select-form .mobile {
+  display: none;
+}
+.whitelist .count-box li .select-form .default-select {
+  height: 6.2rem;
+  margin-top: -4rem;
+  padding: 0 4.6rem;
+  font-size: 2.1rem;
+  border-radius: 2.2rem;
+}
+
+.spooner-nft {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 55.95%;
+  text-align: center;
+}
+.spooner-nft video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.spooner-nft .inner {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 5;
+}
+.spooner-nft h2 {
+  font-size: 6rem;
+}
+.spooner-nft .desc {
+  margin-top: 5.8rem;
+  font-size: 2.8rem;
+  color: #fff;
+  font-family: 'Oswald';
+}
+.spooner-nft .btn-area {
+  margin-top: 9.3rem;
+}
+.spooner-nft .btn-area .btn + .btn {
+  margin-left: 2.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .visual {
+    overflow: inherit;
+    height: 100%;
+    padding-top: 12rem;
+    padding-bottom: 60rem;
+    background: transparent;
+  }
+  .visual::after {
+    bottom: 7rem;
+  }
+  .visual > .mobile {
+    display: block;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    max-width: 100rem;
+    margin-top: 3rem;
+    padding-left: 3rem;
+  }
+  .visual .inner::after {
+    display: none;
+  }
+  .visual::before {
+    content: '';
+    position: absolute;
+    bottom: -18rem;
+    right: 0;
+    width: 68.8rem;
+    height: 87.6rem;
+    z-index: 2;
+    background: url(../images/bg_visual_right_m.png) 100% 100% no-repeat;
+    background-size: 100% auto;
+  }
+  .visual .desc {
+    width: 100%;
+    font-size: 2.4rem;
+  }
+  /* 카운트다운 영역 모바일 여기서 수정 */
+  .visual .timer-area {
+    margin-top: 5rem;
+  }
+  .visual .timer-area p {
+    font-size: 3rem;
+  }
+  .visual .timer-area .timer-box {
+    margin-top: 1.5rem;
+  }
+  .visual .timer-area .timer-box > div {
+    width: 12.8rem;
+    height: 10rem;
+    margin-right: 3.5rem;
+    padding: 0.35rem 2.2rem;
+    font-size: 4.6rem;
+    letter-spacing: 4.2rem;
+    background: url(../images/bg_timer_box_m.png) 0 0 no-repeat;
+    background-size: 100% auto;
+  }
+  .visual .timer-area .timer-box > div::after {
+    font-size: 1.6rem;
+  }
+
+  .visual .btn-area {
+    margin-top: 4rem;
+  }
+  .spooner-nft .btn-area .btn,
+  .visual .btn-area .btn {
+    width: 22rem;
+    height: 8.8rem;
+  }
+
+  .visual .btn-area .btn + .btn {
+    margin-left: 2rem;
+  }
+
+  .visual + .online-service {
+    /* padding-top: 18rem; */
+  }
+  .online-service {
+    padding-top: 28rem;
+    padding-bottom: 10rem;
+  }
+  .online-service .txt-area {
+    padding: 0;
+  }
+  .online-service .txt-area .ico-jackpot {
+    display: block;
+    position: relative;
+    margin: 4rem auto 0;
+    width: 57.4rem;
+    height: 56.8rem;
+    top: auto;
+    right: auto;
+  }
+  .online-service img {
+    display: none;
+  }
+  .online-service .img-mobile {
+    display: block;
+    width: 57.6rem;
+    margin: 0 auto;
+  }
+  .online-service .btn-area {
+    margin-top: 4rem;
+    white-space: normal;
+  }
+  .online-service .btn-area .btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 57.4rem;
+    height: 56.8rem;
+  }
+  .online-service .btn-area .btn::after {
+    display: none;
+  }
+  .online-service .btn-area .btn + .btn {
+    margin: 4rem auto 0 auto;
+  }
+
+  .own-2-earn {
+    padding-top: 12rem;
+    padding-bottom: 26rem;
+  }
+  .own-2-earn .img-area {
+    margin-top: 8rem;
+    text-align: center;
+  }
+  .own-2-earn .btn-area {
+    height: auto;
+    margin-top: 14rem;
+    background: none;
+  }
+  .own-2-earn .btn-area .mobile {
+    display: inline-block;
+  }
+  .own-2-earn .btn-area .btn-move {
+    display: inline-block;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin-top: 12.3rem;
+    padding: 2.4rem 1.4em 3.6rem;
+    font-size: 3.6rem;
+    border-radius: 5rem;
+    white-space: nowrap;
+    transform: none;
+  }
+
+  .benefits {
+    padding-bottom: 14rem;
+  }
+  .benefits .mobile {
+    display: block;
+  }
+  .benefits .select-area {
+    margin-top: 12rem;
+    padding: 0 6rem;
+    background-color: transparent;
+    text-align: center;
+  }
+  .benefits .select-area .flex-form {
+    display: block;
+    margin-top: 0;
+  }
+  .benefits .select-area .flex-form > div {
+    width: 100%;
+  }
+  .benefits .select-area .desc {
+    display: none;
+  }
+  .benefits .select-area .title {
+    margin-bottom: 6rem;
+    font-size: 6rem;
+  }
+  .benefits .select-form + .select-form {
+    margin-top: 1.2rem;
+  }
+  .benefits .input-form {
+    margin-top: 6rem;
+  }
+  .benefits .input-form .sub-title {
+    padding-left: 7rem;
+    font-size: 4rem;
+  }
+  .benefits .input-form .price-box {
+    height: 12.4rem;
+    margin-top: 2rem;
+    padding: 1.5rem 7rem 4.05rem;
+    border-radius: 3.6rem;
+  }
+  .benefits .input-form .price-box p {
+    padding-right: 6.4rem;
+    font-size: 4.8rem;
+  }
+  .benefits .input-form .price-box p::after {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+  .benefits .input-form.rate .price-box {
+    height: 19.8rem;
+    padding: 1rem 7rem 4.05rem;
+  }
+  .benefits .input-form.rate .price-box p {
+    font-size: 10rem;
+  }
+  .benefits .input-form.rate .price-box p::after {
+    font-size: 8.2rem;
+  }
+  .benefits .ico-arrow {
+    margin: 12rem 0;
+    transform: none;
+  }
+  .benefits .select-area .flex-form .result {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 10rem;
+    font-size: 2.8rem;
+    color: #b093f7;
+    line-height: 1.7;
+  }
+
+  .whitelist {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background: linear-gradient(#46219a, #241053);
+    text-align: left;
+  }
+  .whitelist .logout {
+    margin-top: 8rem;
+  }
+  .whitelist .img-area {
+    margin-bottom: 8rem;
+  }
+  .whitelist .img-area img {
+    width: 40.8rem;
+    height: 40.2rem;
+  }
+  .whitelist .btn-area strong {
+    font-size: 3.6rem;
+  }
+  .whitelist .btn-area .btn {
+    width: 48.4rem;
+    margin: 6rem auto 0;
+    padding: 3rem 7rem 4.05rem;
+    font-size: 4.8rem;
+    border-radius: 4.4rem;
+  }
+  .whitelist .btn-area .btn + .btn {
+    margin-top: 2rem;
+  }
+
+  .whitelist .login,
+  .whitelist .apply-complete {
+    margin-top: 7.5rem;
+  }
+  .whitelist .end {
+    margin-top: 9rem;
+  }
+  .whitelist .end .end-notice {
+    display: none;
+  }
+  .whitelist .end .end-notice.mobile {
+    display: block;
+    left: 6rem;
+    right: 6rem;
+    transform: translateY(-50%);
+    padding: 3rem 0;
+    font-size: 12rem;
+    border-top: 1.6rem solid #ffc000;
+    border-bottom: 1.6rem solid #ffc000;
+  }
+  .whitelist .sub-title,
+  .whitelist .sub-desc {
+    font-size: 3.6rem;
+  }
+  .whitelist .sub-desc {
+    margin-top: 4rem;
+  }
+  .whitelist .count-box {
+    margin-top: 6rem;
+    padding: 0 3.2rem;
+  }
+  .whitelist .count-box ul {
+    display: block;
+  }
+  .whitelist .count-box li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .whitelist .count-box li .pc {
+    display: none;
+  }
+  .whitelist .count-box li .img-box {
+    width: 29rem;
+    height: 29rem;
+  }
+  .whitelist .count-box li .select-form {
+    width: auto;
+    min-width: 28rem;
+    margin: 0 0 0 2rem;
+  }
+  .whitelist .count-box li .select-form .num-box {
+    display: inline-block;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 22.6rem;
+    height: 14.4rem;
+    margin-top: 1.8rem;
+    padding: 2rem 1rem;
+    font-size: 7.2rem;
+    border-radius: 4rem;
+  }
+  .whitelist .count-box li .select-form .mobile {
+    display: block;
+    padding-left: 3.5rem;
+    font-size: 6rem;
+  }
+  .whitelist .count-box li .select-form strong {
+    font-weight: 400;
+    font-size: 4.8rem;
+    font-family: 'Oswald';
+    color: #ffba00;
+  }
+  .whitelist .count-box li .select-form .default-select {
+    height: 8.2rem;
+    margin-top: 2rem;
+    padding: 0 4.6rem;
+    font-size: 2.6rem;
+    border-radius: 2.2rem;
+  }
+  .whitelist .count-box li .select-form::after {
+    top: 67%;
+    right: 3rem;
+    border-top-width: 2.5rem;
+    border-bottom-width: 2.5rem;
+    border-left-width: 1.5rem;
+    border-right-width: 1.5rem;
+  }
+  .spooner-nft .inner {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    padding: 0 6rem;
+  }
+  .spooner-nft {
+    padding-bottom: 112.5%;
+  }
+  .spooner-nft .desc {
+    padding: 0 4rem;
+    font-size: 2.2rem;
+  }
+  .spooner-nft video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
+  }
+}
