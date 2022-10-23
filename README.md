@@ -1,16 +1,19 @@
-# SA project
+## 🎏 Side project SA
 
-## Spooner NFT
-### 2022.01.29 ~ 2022.01.30 + @
-### pubURL : https://sosu1008.github.io/spooner/spoonerNFT/src/index.html
-### liveURL : https://nft.bettingspoon.com
+### 🎞 Spooner NFT
+- 2022.01.29 ~
+- pubURL : https://fe-hyunsu.github.io/spooner/spoonerNFT/src/index.html
+- liveURL : https://nft.bettingspoon.com
+- `html` `css` `javascript`
 
-## Betting Spoon
-### 2022.03.05 ~ (진행중)
-### pubURL : https://sosu1008.github.io/spooner/bettingSpoon/src/index.html
-### liveURL : https://bettingspoon.com
+### 🪙 Betting Spoon
+- 2022.03.05 ~
+- pubURL : https://fe-hyunsu.github.io/spooner/bettingSpoon/src/index.html
+- liveURL : https://bettingspoon.com
+- `html` `css` `javascript`
 
-## Spooner Spoon Update (진행중)
-### 2022.04.22 ~ ????.??.??
-### pubURL : https://sosu1008.github.io/spooner/bettingSpoon/src/index.html
-### liveURL : https://bettingspoon.com
+## 💰 Spooner Spoon Update
+- 2022.04.22 ~
+- pubURL : https://fe-hyunsu.github.io/spooner/bettingSpoon/src/index.html
+- liveURL : https://bettingspoon.com
+- `html` `css` `javascript`
